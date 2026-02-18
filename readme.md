@@ -1,9 +1,5 @@
 # Legible Shared Autonomy: Implicit Communication of Robot Belief through Motion
 
-**Albert Author¹ and Bernard D. Researcher²**
-
-¹University of Twente, Netherlands | ²Wright State University, USA
-
 ---
 
 ## Abstract
