@@ -14,7 +14,7 @@ Shared autonomy systems combine human input with autonomous assistance to help u
 
 We propose the first action-level legibility metric suitable for real-time control:
 
-$$\mathcal{L}(\bm{a}_R \mid s^t, \theta^*) = \log \pi_H(\bm{a}_R \mid s^t, \theta^*) - \log \max_{\theta \neq \theta^*} \pi_H(\bm{a}_R \mid s^t, \theta)$$
+$$\mathcal{L}(\boldsymbol{a}_R \mid s^t, \theta^*) = \log \pi_H(\boldsymbol{a}_R \mid s^t, \theta^*) - \log \max_{\theta \neq \theta^*} \pi_H(\boldsymbol{a}_R \mid s^t, \theta)$$
 
 Unlike prior trajectory-level approaches that optimize complete paths offline, our metric enables efficient computation at each timestep.
 
@@ -22,7 +22,7 @@ Unlike prior trajectory-level approaches that optimize complete paths offline, o
 
 Robot action selection balances legibility and task performance:
 
-$$\bm{a}_R^* = \arg\max_{\bm{a}_R} \left[ \lambda \mathcal{L}(\bm{a}_R \mid s^t, \theta^*) + Q(\bm{a}_R, s^t, \theta^*) \right]$$
+$$\boldsymbol{a}_R^* = \arg\max_{\boldsymbol{a}_R} \left[ \lambda \mathcal{L}(\boldsymbol{a}_R \mid s^t, \theta^*) + Q(\boldsymbol{a}_R, s^t, \theta^*) \right]$$
 ---
 
 ## Experimental Setup
@@ -44,32 +44,38 @@ $$\bm{a}_R^* = \arg\max_{\bm{a}_R} \left[ \lambda \mathcal{L}(\bm{a}_R \mid s^t,
 
 ## Trajectory Animations
 
-Real participant trajectories provide direct evidence of how legible motion changes collaboration dynamics. Each animation shows all trials for one participant, color-coded by legibility condition (Red: λ=0, Cyan: λ=5, Teal: λ=10).
-
-<p align="center">
-  <img src="trajectory_animations/participant_001_trajectories.gif" alt="Participant 001" width="650"/>
-  <br>
-  <em>Participant 001</em>
-</p>
-
-<p align="center">
-  <img src="trajectory_animations/participant_002_trajectories.gif" alt="Participant 002" width="650"/>
-  <br>
-  <em>Participant 002</em>
-</p>
-
-<p align="center">
-  <img src="trajectory_animations/participant_003_trajectories.gif" alt="Participant 003" width="650"/>
-  <br>
-  <em>Participant 003</em>
-</p>
-
-**Key Observations:**
-- Legible conditions (cyan/teal) show earlier divergence toward correct goal
-- Standard SA (red) requires more corrections and later disambiguation  
-- Users visibly respond to legible motion with reduced control effort
-
-All participant animations are available in `trajectory_animations/participant_*.gif`
+<table>
+  <tr>
+    <td align="center"><img src="trajectory_animations/participant_1_trajectories.gif" width="200"/><br><sub>Participant 1</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_2_trajectories.gif" width="200"/><br><sub>Participant 2</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_3_trajectories.gif" width="200"/><br><sub>Participant 3</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_4_trajectories.gif" width="200"/><br><sub>Participant 4</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="trajectory_animations/participant_5_trajectories.gif" width="200"/><br><sub>Participant 5</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_6_trajectories.gif" width="200"/><br><sub>Participant 6</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_7_trajectories.gif" width="200"/><br><sub>Participant 7</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_10_trajectories.gif" width="200"/><br><sub>Participant 10</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="trajectory_animations/participant_11_trajectories.gif" width="200"/><br><sub>Participant 11</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_12_trajectories.gif" width="200"/><br><sub>Participant 12</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_13_trajectories.gif" width="200"/><br><sub>Participant 13</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_15_trajectories.gif" width="200"/><br><sub>Participant 15</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="trajectory_animations/participant_dong_trajectories.gif" width="200"/><br><sub>Participant Dong</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_gong_trajectories.gif" width="200"/><br><sub>Participant Gong</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_shuxian_trajectories.gif" width="200"/><br><sub>Participant Shuxian</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_sun_trajectories.gif" width="200"/><br><sub>Participant Sun</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="trajectory_animations/participant_wangchao_trajectories.gif" width="200"/><br><sub>Participant Wangchao</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_wangqi_trajectories.gif" width="200"/><br><sub>Participant Wangqi</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_xing_trajectories.gif" width="200"/><br><sub>Participant Xing</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_zhang_trajectories.gif" width="200"/><br><sub>Participant Zhang</sub></td>
+  </tr>
+</table>
 
 ---
 
@@ -118,7 +124,7 @@ legible_autonomy/
 
 **Installation:**
 ```bash
-git clone https://github.com/Jinwei-Liu/legible_autonomy
+git clone <repository-url>
 cd legible_autonomy
 pip install -r requirements.txt
 ```
