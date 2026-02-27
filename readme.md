@@ -8,30 +8,13 @@ Shared autonomy systems combine human input with autonomous assistance to help u
 
 ---
 
-## Key Contributions
-
-**1. Action-Level Legibility Metric**
-
-We propose the first action-level legibility metric suitable for real-time control:
-
-$$\mathcal{L}(\boldsymbol{a}_R \mid s^t, \theta^*) = \log \pi_H(\boldsymbol{a}_R \mid s^t, \theta^*) - \log \max_{\theta \neq \theta^*} \pi_H(\boldsymbol{a}_R \mid s^t, \theta)$$
-
-Unlike prior trajectory-level approaches that optimize complete paths offline, our metric enables efficient computation at each timestep.
-
-**2. Dual Optimization Framework**
-
-Robot action selection balances legibility and task performance:
-
-$$\boldsymbol{a}_R^* = \arg\max_{\boldsymbol{a}_R} \left[ \lambda \mathcal{L}(\boldsymbol{a}_R \mid s^t, \theta^*) + Q(\boldsymbol{a}_R, s^t, \theta^*) \right]$$
----
-
 ## Experimental Setup
 
 <p align="center">
   <img src="figures/experimental_setup.pdf" alt="Experimental Setup" width="700"/>
 </p>
 
-**Design:** Within-subjects study with 10 participants
+**Design:** Within-subjects study with 20 participants
 
 **Conditions:**
 - λ=0 (Standard SA): Efficient but ambiguous motion
@@ -94,47 +77,3 @@ $$\boldsymbol{a}_R^* = \arg\max_{\boldsymbol{a}_R} \left[ \lambda \mathcal{L}(\b
 - Intuitiveness ratings: 3.70 → 7.70 (1-10 scale)
 - Collaboration ratings: 3.60 → 7.70
 - Strong correlation between measures: r = 0.92, p < 0.001
-
-**Key Finding:** Medium and high legibility produced equivalent benefits, suggesting moderate emphasis suffices for transparency while preserving efficiency.
-
----
-
-## Repository Structure
-```
-legible_autonomy/
-├── figures/                          # Paper figures
-│   ├── experimental_setup.pdf
-│   ├── beta_heatmap.pdf
-│   └── combined_figure.pdf
-│
-├── trajectory_animations/            # Participant trajectory GIFs
-│   ├── participant_001_trajectories.gif
-│   ├── participant_002_trajectories.gif
-│   └── ...
-│
-├── experiment_data/                  # Raw experiment data
-├── core/                            # Core algorithms
-├── experiment_collection.py         # Main experiment interface
-└── analyze_data.py                  # Statistical analysis
-```
-
----
-
-## Reproducing Results
-
-**Installation:**
-```bash
-git clone <repository-url>
-cd legible_autonomy
-pip install -r requirements.txt
-```
-
-**Generate trajectory animations:**
-```bash
-python generate_trajectory_animations.py --input ./experiment_data --output ./trajectory_animations
-```
-
-**Run statistical analysis:**
-```bash
-python analyze_data.py --input ./experiment_data --output ./figures
-```

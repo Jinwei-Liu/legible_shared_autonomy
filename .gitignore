@@ -2,6 +2,5 @@ experiment_data
 experiment_results
 questionnaire_results
 analysis_results
-figures
 generate_setup_figure.py
 beta_heatmap.py
