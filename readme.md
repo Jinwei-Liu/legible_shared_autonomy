@@ -77,3 +77,10 @@ Shared autonomy systems combine human input with autonomous assistance to help u
 - Intuitiveness ratings: 3.70 → 7.70 (1-10 scale)
 - Collaboration ratings: 3.60 → 7.70
 - Strong correlation between measures: r = 0.92, p < 0.001
+
+**User Effort (Panel d):**
+- Mean user input norm: λ=0: 8.92 ± 7.71 → λ=5: 4.25 ± 4.60 → λ=10: 3.53 ± 3.51
+- Legible motion reduces user effort by 52% (λ=5) and 60% (λ=10) vs. standard SA
+- Overall effect: Kruskal-Wallis H(2) = 30.68, p < 0.001
+- Pairwise tests (Bonferroni-corrected): λ=0 vs λ=5: p < 0.001 (***), λ=0 vs λ=10: p < 0.001 (***), λ=5 vs λ=10: p = 1.000 (ns)
+- Both legible conditions significantly outperform standard SA; no significant difference between the two legibility levels
