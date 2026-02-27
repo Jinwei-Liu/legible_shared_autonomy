@@ -4,3 +4,8 @@ questionnaire_results
 analysis_results
 generate_setup_figure.py
 beta_heatmap.py
+analyze_experiment_data.py
+analyze_phase2_data.py
+analyze_questionnaire_data.py
+demo_dragan.py
+demo_shared.py
