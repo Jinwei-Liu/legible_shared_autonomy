@@ -11,7 +11,7 @@ Shared autonomy systems combine human input with autonomous assistance to help u
 ## Experimental Setup
 
 <p align="center">
-  <img src="figures/experimental_setup.pdf" alt="Experimental Setup" width="700"/>
+  <img src="figures/experimental_setup.png" alt="Experimental Setup" width="700"/>
 </p>
 
 **Design:** Within-subjects study with 20 participants
@@ -65,7 +65,7 @@ Shared autonomy systems combine human input with autonomous assistance to help u
 ## Main Results
 
 <p align="center">
-  <img src="figures/combined_figure.pdf" alt="Results" width="900"/>
+  <img src="figures/combined_figure.png" alt="Results" width="900"/>
 </p>
 
 **Transparency Metrics:**
