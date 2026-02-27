@@ -69,14 +69,15 @@ Shared autonomy systems combine user input with autonomous assistance to help us
 </p>
 
 **Transparency Metrics:**
-- Understanding rate: 36% → 94-98% (Standard SA → Legible)
-- Prediction accuracy: 48% → 96-98%
-- Statistical significance: χ²(2) = 66.01, p < 0.001
+- Understanding rate: 38% → 96-99% (Standard SA → Legible)
+- Statistical significance: χ²(2) = 136.33, p < 0.001
+- Prediction accuracy: 54% → 96-99%
+- Statistical significance: χ²(2) = 89.72, p < 0.001
 
 **Subjective Experience:**
-- Intuitiveness ratings: 3.70 → 7.70 (1-10 scale)
-- Collaboration ratings: 3.60 → 7.70
-- Strong correlation between measures: r = 0.92, p < 0.001
+- Intuitiveness ratings: 3.90 → 8.35 (1-10 scale)
+- Collaboration ratings: 4.25 → 7.00
+- Strong correlation between measures: r = 0.66, p < 0.001
 
 **User Effort (Panel d):**
 - Mean user input norm: λ=0: 8.92 ± 7.71 → λ=5: 4.25 ± 4.60 → λ=10: 3.53 ± 3.51
