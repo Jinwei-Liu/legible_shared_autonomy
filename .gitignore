@@ -4,3 +4,5 @@ questionnaire_results
 analysis_results
 generate_setup_figure.py
 beta_heatmap.py
+generate_grid_video.py
+trajectory_grid_video.mp4
