@@ -47,16 +47,16 @@ Shared autonomy systems combine user input with autonomous assistance to help us
     <td align="center"><img src="trajectory_animations/participant_15_trajectories.gif" width="200"/><br><sub>Participant 15</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="trajectory_animations/participant_dong_trajectories.gif" width="200"/><br><sub>Participant Dong</sub></td>
-    <td align="center"><img src="trajectory_animations/participant_gong_trajectories.gif" width="200"/><br><sub>Participant Gong</sub></td>
-    <td align="center"><img src="trajectory_animations/participant_shuxian_trajectories.gif" width="200"/><br><sub>Participant Shuxian</sub></td>
-    <td align="center"><img src="trajectory_animations/participant_sun_trajectories.gif" width="200"/><br><sub>Participant Sun</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_dong_trajectories.gif" width="200"/><br><sub>Participant 8</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_gong_trajectories.gif" width="200"/><br><sub>Participant 9</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_shuxian_trajectories.gif" width="200"/><br><sub>Participant 14</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_sun_trajectories.gif" width="200"/><br><sub>Participant 16</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="trajectory_animations/participant_wangchao_trajectories.gif" width="200"/><br><sub>Participant Wangchao</sub></td>
-    <td align="center"><img src="trajectory_animations/participant_wangqi_trajectories.gif" width="200"/><br><sub>Participant Wangqi</sub></td>
-    <td align="center"><img src="trajectory_animations/participant_xing_trajectories.gif" width="200"/><br><sub>Participant Xing</sub></td>
-    <td align="center"><img src="trajectory_animations/participant_zhang_trajectories.gif" width="200"/><br><sub>Participant Zhang</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_wangchao_trajectories.gif" width="200"/><br><sub>Participant 17</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_wangqi_trajectories.gif" width="200"/><br><sub>Participant 18</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_xing_trajectories.gif" width="200"/><br><sub>Participant 19</sub></td>
+    <td align="center"><img src="trajectory_animations/participant_zhang_trajectories.gif" width="200"/><br><sub>Participant 20</sub></td>
   </tr>
 </table>
 
@@ -83,5 +83,5 @@ Shared autonomy systems combine user input with autonomous assistance to help us
 - Mean user input norm: λ=0: 8.92 ± 7.71 → λ=5: 4.25 ± 4.60 → λ=10: 3.53 ± 3.51
 - Legible motion reduces user effort by 52% (λ=5) and 60% (λ=10) vs. standard SA
 - Overall effect: Kruskal-Wallis H(2) = 30.68, p < 0.001
-- Pairwise tests (Bonferroni-corrected): λ=0 vs λ=5: p < 0.001 (***), λ=0 vs λ=10: p < 0.001 (***), λ=5 vs λ=10: p = 1.000 (ns)
+- Pairwise tests (Bonferroni-corrected): λ=0 vs λ=5: p < 0.001 \*\*\*, λ=0 vs λ=10: p < 0.001 \*\*\*, λ=5 vs λ=10: p = 1.000 (ns)
 - Both legible conditions significantly outperform standard SA; no significant difference between the two legibility levels
