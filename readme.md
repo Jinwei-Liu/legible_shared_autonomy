@@ -91,8 +91,10 @@ Shared autonomy systems combine user input with autonomous assistance to help us
 ## Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Jinwei-Liu/legible_shared_autonomy.git
 cd legible_autonomy
+conda create -n LSA python=3.10 -y
+conda activate LSA
 python -m pip install numpy pygame matplotlib pandas scipy pillow
 ```
 
