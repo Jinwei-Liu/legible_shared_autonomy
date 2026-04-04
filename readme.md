@@ -85,3 +85,38 @@ Shared autonomy systems combine user input with autonomous assistance to help us
 - Overall effect: Kruskal-Wallis H(2) = 30.68, p < 0.001
 - Pairwise tests (Bonferroni-corrected): λ=0 vs λ=5: p < 0.001 \*\*\*, λ=0 vs λ=10: p < 0.001 \*\*\*, λ=5 vs λ=10: p = 1.000 (ns)
 - Both legible conditions significantly outperform standard SA; no significant difference between the two legibility levels
+
+---
+
+## Installation
+
+```bash
+git clone <your-repo-url>
+cd legible_autonomy
+python -m pip install numpy pygame matplotlib pandas scipy pillow
+```
+
+## Reproduce
+
+### Run the experiment
+
+```bash
+python experiment_collection.py
+```
+
+### Reproduce the main analysis figure
+
+```bash
+python analyze_data.py --input ./experiment_data --output ./figures
+```
+
+## Main files
+
+- `experiment_collection.py` - interactive experiment
+- `analyze_data.py` - statistical analysis and main figure
+- `core/shared_autonomy.py` - shared-autonomy policy
+- `core/legibility.py` - legibility objective
+
+## Note
+
+Pre-generated figures and trajectory animations are already included in the repository, so you can inspect the results directly without rerunning the full pipeline.
